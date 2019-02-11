@@ -1,0 +1,20 @@
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<mat-accordion multi="true" *ngIf="disks.length > 0 && !isLoading">
+  <mat-expansion-panel *ngFor="let disk of disks">
+    <mat-expansion-panel-header>
+        <mat-panel-title>Ticket:<mat-panel-description>{{ disk._ticket }}</mat-panel-description></mat-panel-title>
+        <mat-panel-title>Type Stockage:<mat-panel-description>{{ disk.type_stockage }}</mat-panel-description></mat-panel-title>
+        <mat-panel-title *ngIf="disk.isRaid">Type Raid:<mat-panel-description>{{ disk.type_raid }}</mat-panel-description></mat-panel-title>
+        <mat-panel-title>Raison Panne:<mat-panel-description>{{ disk.reason_panne }}</mat-panel-description></mat-panel-title>
+        <mat-panel-title>Méthode d'expédition:<mat-panel-description>{{ disk.expedition_method }}</mat-panel-description></mat-panel-title>
+        <mat-panel-title>Date:<mat-panel-description>{{ disk.date }}</mat-panel-description></mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>{{ disk.author.id }}</p>
+    <mat-action-row *ngIf="userIsAuthenticated && userId === disk.author.id">
+      <a mat-button color="primary" [routerLink]="['/edit', disk._id]">EDIT</a>
+      <button mat-button color="warn" (click)="onDelete(disk._id)">DELETE</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+<mat-paginator [length]="totaldisks" [pageSize]="diskPerPage" [pageSizeOptions]="pageSizeOptions" (page)="onChangedPage($event)" *ngIf="disks.length > 0"></mat-paginator>
+<p class="info-text mat-body-1" *ngIf="disks.length <= 0 && !isLoading">No Disk(s) Added yet!</p>
