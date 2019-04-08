@@ -1,6 +1,7 @@
 {
   "name": "meanStack",
   "version": "1.0.0",
+  "author": "Mathieu Lussier",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
