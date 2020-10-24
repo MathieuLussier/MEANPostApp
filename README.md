@@ -17,7 +17,7 @@ npm install
 Use angular cli to start the frontend.
 
 ```bash
-ng start
+ng serve
 ```
 
 Use npm scripts to start the backend.
