@@ -1,27 +1,48 @@
-# Chronodisklabv2
+# MeanPostApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
+MeanPostApp is a social application where you can share anything with people's.
+ 
+[DEMO](https://meanpostapp.mathieulussier.ca/)
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+clone the project from github then use the package manager [npm](https://www.npmjs.com/) to install MeanPostApp dependencies.
 
-## Code scaffolding
+```bash
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+Use angular cli to start the frontend.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+ng start
+```
 
-## Running unit tests
+Use npm scripts to start the backend.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm run start
+```
 
-## Running end-to-end tests
+# Todos
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+  - Evolving the ui.
+  - Adding the ability to change the password.
+  - Reworking image uploads.
+  - Adding the ability to change the user informations from his profile.
+  - Adding geolocalisation to the app.
+  - Maybe rewritte all frontend code into angular.
+  - Adding ability to describe the campground more than just a text box.
 
-## Further help
+### Technologies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Angular] - JavaScript Frontend Framework 
+* [node.js] - Runtime environment that executes JavaScript code outside a web browser
+* [Express] - Node.js Backend Framework
+* [MongoDb] - Document-Oriented Database Program
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
