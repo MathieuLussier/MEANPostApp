@@ -32,9 +32,6 @@ npm run start
   - Adding the ability to change the password.
   - Reworking image uploads.
   - Adding the ability to change the user informations from his profile.
-  - Adding geolocalisation to the app.
-  - Maybe rewritte all frontend code into angular.
-  - Adding ability to describe the campground more than just a text box.
 
 ### Technologies
 
