@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chronodisklabv2": {
+    "meanpostapp": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chronodisklabv2",
+            "outputPath": "dist/meanpostapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -53,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "chronodisklabv2:build"
+            "browserTarget": "meanpostapp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "chronodisklabv2:build:production"
+              "browserTarget": "meanpostapp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chronodisklabv2:build"
+            "browserTarget": "meanpostapp:build"
           }
         },
         "test": {
@@ -101,7 +101,7 @@
         }
       }
     },
-    "chronodisklabv2-e2e": {
+    "meanpostapp-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -109,11 +109,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "chronodisklabv2:serve"
+            "devServerTarget": "meanpostapp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "chronodisklabv2:serve:production"
+              "devServerTarget": "meanpostapp:serve:production"
             }
           }
         },
@@ -129,5 +129,5 @@
       }
     }
   },
-  "defaultProject": "chronodisklabv2"
+  "defaultProject": "meanpostapp"
 }
