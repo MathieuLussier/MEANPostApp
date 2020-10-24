@@ -31,7 +31,8 @@ npm run start
   - Evolving the ui.
   - Adding the ability to change the password.
   - Reworking image uploads.
-  - Adding the ability to change the user informations from his profile.
+  - Resizing the images.
+  - Adding profile for users.
 
 ### Technologies
 
